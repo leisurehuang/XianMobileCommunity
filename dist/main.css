@@ -1,0 +1,92 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  text-align: center;
+  font-size: 40px;
+  max-width: 1800px;
+  margin: 1em auto; }
+  body p {
+    margin: 0 auto; }
+
+.section_style {
+  padding-bottom: 2em; }
+
+.color_white, .hero h1, .hero p, .shows .moment .show_title, .shows .moment .show_desc {
+  color: #FFF; }
+
+.section_title {
+  font-size: 2em;
+  margin: 1em; }
+
+.hero {
+  background-image: url("images/hero_image.jpg");
+  background-size: cover; }
+  .hero h1 {
+    padding-top: 2em;
+    font-size: 2em; }
+  .hero p {
+    padding-bottom: 2em;
+    font-size: 1em; }
+
+.about {
+  margin-top: 1em; }
+  .about .ahout_desc {
+    padding: 2em 4em; }
+
+.shows {
+  border-bottom: 1px solid #A5AAAF;
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between; }
+  .shows .moment {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-size: cover;
+    margin-right: 0.5em; }
+    .shows .moment .show_title {
+      font-size: 2em;
+      padding-top: 0.3em; }
+    .shows .moment .show_desc {
+      font-size: 0.6em;
+      padding: 2em 1em; }
+    .shows .moment:last-child {
+      margin-right: 0; }
+  .shows .share_bgImage {
+    background-image: url("images/pic_share.jpg"); }
+  .shows .learn_bgImage {
+    background-image: url("images/pic_learning.jpg"); }
+  .shows .communicat_bgImage {
+    background-image: url("images/pic_communication.jpg"); }
+  .shows .growth_bgImage {
+    background-image: url("images/pic_growth.jpg"); }
+
+.activities {
+  border-bottom: 1px solid #A5AAAF;
+  margin: auto;
+  text-align: center; }
+
+.contact .contacts {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+  .contact .contacts .contact_item {
+    list-style-type: none;
+    float: left;
+    display: inline-block; }
