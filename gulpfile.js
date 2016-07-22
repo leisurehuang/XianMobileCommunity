@@ -4,7 +4,7 @@ var gls = require('gulp-live-server');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
-  return gulp.src('./src/main.scss')
+  return gulp.src(['./src/main.scss','./src/timeline.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
 });
