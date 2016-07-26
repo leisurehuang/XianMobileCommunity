@@ -16,7 +16,7 @@
 body {
     text-align: center;
     font-size: 20px;
-    margin: 1em auto;
+    margin: auto;
     max-width: 1080px;
     font-family: sans-serif;
 }
@@ -33,12 +33,11 @@ body {
     font-size: 2em;
     margin: 1em 0 0.5em;
 }
-
 .section_line {
-  border-top: 1px dashed #E5E5E5;
-  border-bottom: 1px dashed #E5E5E5;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .hero {
     background-image: url("images/hero_image.jpg");
@@ -55,12 +54,13 @@ body {
     }
 }
 .about {
-  @extend .section_line;
+    @extend .section_line;
     .ahout_desc {
+        font-size: 1em;
         padding: 0;
     }
     .shows {
-        margin: 1em 0  0em 0;
+        margin: 3em 0 0;
         display: flex;
         justify-content: space-between;
         .moment {
@@ -88,13 +88,13 @@ body {
                 z-index: 2;
             }
             .show_title {
-              margin: 0 auto;
+                margin: 0 auto;
                 font-size: 1.5em;
                 padding-top: 1em;
             }
             .show_desc {
                 font-size: 0.6em;
-                padding: 0.5em 1em 1em 1em;
+                padding: 0.5em 1em 1em;
             }
             &:last-child {
                 margin-right: 0;
@@ -115,7 +115,7 @@ body {
     }
 }
 .activities {
-  @extend .section_line;
+    @extend .section_line;
 }
 .join_us {
     background-image: url("images/about_background.jpg");
@@ -146,18 +146,57 @@ body {
             list-style-type: none;
             float: left;
             display: inline-block;
-            .Qcard {
-                width: 200px;
-                height: 200px;
-            }
         }
     }
 }
-// @media screen (max-width:600px){
-//   body {
-//     font-size: 20px;
-//   }
-//   .show .moment {
-//     width: 50%;
-//   }
-// }
+.Qcard {
+    width: 200px;
+    height: 200px;
+}
+.footer_frame {
+    background-color: #4d4e58;
+    .footer_text {
+        font-size: 0.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: white;
+    }
+}
+@media screen and (max-width: 736px) {
+    body {
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 16px;
+    }
+    .hero {
+        .title {
+            padding-top: 0.5em;
+        }
+        .desc {
+            padding-bottom: 0;
+        }
+    }
+    .Qcard {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .hero {
+        .title {
+            margin: 0 auto;
+            padding-top: 0.5em;
+        }
+        .desc {
+            margin: 0 auto;
+        }
+    }
+    .join_us {
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    .Qcard {
+        width: 50px;
+        height: 50px;
+    }
+}
