@@ -15,74 +15,105 @@
 
 body {
   text-align: center;
-  font-size: 40px;
-  max-width: 1800px;
-  margin: 1em auto; }
-  body p {
-    margin: 0 auto; }
+  font-size: 20px;
+  margin: auto;
+  max-width: 1080px;
+  font-family: sans-serif; }
 
 .section_style {
   padding-bottom: 2em; }
 
-.color_white, .hero h1, .hero p, .shows .moment .show_title, .shows .moment .show_desc {
+.color_white, .hero .title, .hero .desc, .join_us .join_title, .join_us .join {
   color: #FFF; }
+
+.color_lightWhite, .about .shows .moment .show_desc,
+.about .shows .moment .show_title {
+  color: #CCC; }
 
 .section_title {
   font-size: 2em;
-  margin: 1em; }
+  margin: 1em 0 0.5em; }
+
+.section_line, .about, .activities {
+  border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 .hero {
   background-image: url("images/hero_image.jpg");
   background-size: cover; }
-  .hero h1 {
+  .hero .title {
     padding-top: 2em;
     font-size: 2em; }
-  .hero p {
+  .hero .desc {
     padding-bottom: 2em;
     font-size: 1em; }
 
-.about {
-  margin-top: 1em; }
-  .about .ahout_desc {
-    padding: 2em 4em; }
+.about .ahout_desc {
+  font-size: 1em;
+  padding: 0; }
 
-.shows {
-  border-bottom: 1px solid #A5AAAF;
-  margin: 1em 0;
+.about .shows {
+  margin: 3em 0 0;
   display: flex;
   justify-content: space-between; }
-  .shows .moment {
+  .about .shows .moment {
     float: left;
     width: 25%;
     display: inline-block;
     box-sizing: border-box;
     background-size: cover;
-    margin-right: 0.5em; }
-    .shows .moment .show_title {
-      font-size: 2em;
-      padding-top: 0.3em; }
-    .shows .moment .show_desc {
+    margin-right: 0.5em;
+    position: relative; }
+    .about .shows .moment:after {
+      content: '';
+      background: black;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    .about .shows .moment .show_desc,
+    .about .shows .moment .show_title {
+      position: relative;
+      z-index: 2; }
+    .about .shows .moment .show_title {
+      margin: 0 auto;
+      font-size: 1.5em;
+      padding-top: 1em; }
+    .about .shows .moment .show_desc {
       font-size: 0.6em;
-      padding: 2em 1em; }
-    .shows .moment:last-child {
+      padding: 0.5em 1em 1em; }
+    .about .shows .moment:last-child {
       margin-right: 0; }
-  .shows .share_bgImage {
+  .about .shows .share_bgImage {
     background-image: url("images/pic_share.jpg"); }
-  .shows .learn_bgImage {
+  .about .shows .learn_bgImage {
     background-image: url("images/pic_learning.jpg"); }
-  .shows .communicat_bgImage {
+  .about .shows .communicat_bgImage {
     background-image: url("images/pic_communication.jpg"); }
-  .shows .growth_bgImage {
+  .about .shows .growth_bgImage {
     background-image: url("images/pic_growth.jpg"); }
 
-.activities {
-  border-bottom: 1px solid #A5AAAF;
-  margin: auto;
-  text-align: center; }
+.join_us {
+  background-image: url("images/about_background.jpg");
+  background-size: cover;
+  padding-top: 2em;
+  padding-bottom: 4em; }
+  .join_us .join_title {
+    font-size: 1.5em; }
+  .join_us .join {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    font-size: 0.8em;
+    width: 8em;
+    height: 2em; }
 
 .contact .contacts {
-  width: 50%;
-  margin: 0 auto;
+  margin: 0 4em;
   padding: 0;
   display: flex;
   justify-content: space-between; }
@@ -90,3 +121,41 @@ body {
     list-style-type: none;
     float: left;
     display: inline-block; }
+
+.Qcard {
+  width: 200px;
+  height: 200px; }
+
+.footer_frame {
+  background-color: #4d4e58; }
+  .footer_frame .footer_text {
+    font-size: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white; }
+
+@media screen and (max-width: 736px) {
+  body {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 16px; }
+  .hero .title {
+    padding-top: 0.5em; }
+  .hero .desc {
+    padding-bottom: 0; }
+  .Qcard {
+    width: 100px;
+    height: 100px; } }
+
+@media screen and (max-width: 360px) {
+  .hero .title {
+    margin: 0 auto;
+    padding-top: 0.5em; }
+  .hero .desc {
+    margin: 0 auto; }
+  .join_us {
+    padding-top: 1em;
+    padding-bottom: 2em; }
+  .Qcard {
+    width: 50px;
+    height: 50px; } }

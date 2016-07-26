@@ -11,7 +11,7 @@
   top: 0;
   bottom: 0;
   width: 10px;
-  background: #7FCFD6;
+  background: #685863;
   left: 20%;
   margin-left: -10px; }
 
@@ -31,22 +31,22 @@
 
 .cbp_tmtimeline > li .cbp_tmtime span:first-child {
   font-size: 0.5em;
-  color: #bdd0db;
+  color: #463835;
   padding-right: 2em; }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
   font-size: 1em;
-  color: #7FCFD6;
+  color: #463835;
   padding-right: 1em; }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-  color: #7FCFD6; }
+  color: #463835; }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
   margin: 0 0 15px 25%;
   background: #7FCFD6;
-  color: #fff;
+  color: #FFFFFF;
   padding: 2em;
   font-size: 0.8em;
   font-weight: 300;
@@ -55,7 +55,7 @@
   border-radius: 5px; }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #58B4BD; }
+  background: #685863; }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
   margin-top: 0;
@@ -80,7 +80,7 @@
   top: 10px; }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #58B4BD; }
+  border-right-color: #685863; }
 
 /* The icons */
 .cbp_tmtimeline > li .cbp_tmicon {
@@ -97,9 +97,9 @@
   -webkit-font-smoothing: antialiased;
   position: absolute;
   color: #fff;
-  background: #67BEC8;
+  background: gray;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #58B4BD;
+  box-shadow: 0 0 0 8px #685863;
   text-align: center;
   left: 20%;
   top: 0;
@@ -118,7 +118,7 @@
   content: "\e003"; }
 
 /* Example Media Queries */
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 1024px) {
   .cbp_tmtimeline:before {
     display: none; }
   .cbp_tmtimeline > li .cbp_tmtime {
@@ -136,11 +136,11 @@
     right: auto;
     left: 20px;
     border-right-color: transparent;
-    border-bottom-color: #7FCFD6;
+    border-bottom-color: #BCBCBC;
     top: -20px; }
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
     border-right-color: transparent;
-    border-bottom-color: #6cbfee; }
+    border-bottom-color: #685863; }
   .cbp_tmtimeline > li .cbp_tmicon {
     position: relative;
     float: right;
